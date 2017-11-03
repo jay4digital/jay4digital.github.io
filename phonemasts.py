@@ -66,7 +66,7 @@ def sortedlistdes(sortedlist):
 def addentry(sortedlist,entry):                #adding entry to sortedlist and display in browser
                                                #entry is the attr used that contains the added entries to increase the sortedlist size
     sortedlist.append(entry)                   #entry added to sortedlist
-    with open("C:latestlist.txt", "a") as my_file:  # a textfile called latestlist is then opened and renamed in append(a) mode which retains every entry added
+    with open("latestlist.txt", "a") as my_file:  # a textfile called latestlist is then opened and renamed in append(a) mode which retains every entry added
         for x in sortedlist:                   # for each line or row in the sortedlist
             data = my_file.write(str(x))       #each row is then added to the textfile via the write command
     print(data)	                               #requesting a print of the text file, but couldn't see it since in write mode, checked it by opening file manually
